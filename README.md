@@ -23,6 +23,11 @@ http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 - Zeitleiste
 - Zeitleiste (Farben)
 
+## Language support
+The presets are only available in German. There are no translations for presets as there are for plugins.
+There are no translations for presets as there are for plugins.
+If you want to translate the presets, you have to create new presets and make changes to the database fields and the CSS file. 
+
 ## Source control URL
 https://github.com/matthiasrke/moodle-mod_data_preset
 
