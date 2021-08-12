@@ -1,0 +1,134 @@
+/**
+ * Charakterisierung v1.0.1 de
+ *
+ * @package    datapreset_charakterisierung
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Alignment of add entry button. */
+.mdl-align {
+    text-align: left;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .mod-data-input {
+    margin-left: 0;
+}
+
+#page-mod-data-edit .basefieldinput {
+    width: 100%;
+    max-width: 30rem;
+}
+
+#page-mod-data-edit .entry-name .basefieldinput {
+    max-width: 20rem;
+}
+
+/* Width of entries and comments. */
+.entry,
+.comment-link,
+.comment-ctrl {
+    max-width: 725px;
+}
+
+/* Quote. */
+.quote {
+    position: relative;
+    background: rgba(0, 0, 0, .08);
+    max-width: 18rem;
+    border-radius: .5rem;
+    margin: 2rem auto 1rem;
+    padding: 1rem;
+}
+
+.quote::after {
+    position: absolute;
+    content: "";
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(0, 0, 0, .08);
+    top: -20px;
+    left: 20px;
+}
+
+/* List view. */
+.card ul {
+    -webkit-margin-start: 0;
+}
+
+/* Cards. */
+/* Card header. */
+.card-header {
+    padding: .5rem;
+}
+
+/* Fix wrong display of cards. */
+.card-body {
+    min-height: auto;
+}
+
+/* Hide empty lines. */
+.card-title:empty,
+.card-text:empty,
+.card-footer:empty,
+.quote:empty,
+.list-group-item:empty {
+    display: none;
+}
+
+/* Image size. */
+#page-mod-data-view .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Font size. */
+.card-title {
+    font-weight: 600;
+}
+
+#region-main .card small {
+    font-size: 90%;
+}
+
+/* Margin. */
+.card-colums .card {
+    margin-bottom: 1.25rem;
+}
+
+/* Display of cards. */
+.card-colums .card {
+    display: inline-block;
+    width: 100%;
+}
+
+/* List view. */
+@media screen and (min-width: 576px) {
+    .card-colums {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+    }
+}
+
+/* Print version. */
+@media print {
+
+    /* Not displayed in print version. */
+    #page-header,
+    #page-footer,
+    .intro,
+    .nav-tabs,
+    .datapreferences,
+    .btn-secondary,
+    i.icon,
+    .comment-area,
+    .pagination,
+    input,
+    .activity-navigation {
+        display: none;
+    }
+}

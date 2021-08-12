@@ -1,0 +1,190 @@
+/**
+ * Zeitleiste v1.1.9 de
+ *
+ * @package    datapreset_zeitleiste
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Alignment of add entry button. */
+.box h3 {
+    text-align: center;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .basefieldinput,
+#page-mod-data-edit .entry-img {
+    width: 100%;
+    max-width: 30rem;
+}
+
+#page-mod-data-edit .entry-date .basefieldinput {
+    max-width: 15rem;
+}
+
+/*  Width of comments. */
+@media screen and (min-width: 576px) {
+
+    .comment-link,
+    .comment-ctrl {
+        max-width: 40%;
+        margin-left: 10%;
+    }
+}
+
+/* Non-visible container. */
+.time-container {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    background: inherit;
+}
+
+/* Container on the left. */
+.time-container:nth-child(odd) {
+    left: 0;
+}
+
+/* Container on the right. */
+.time-container:nth-child(even) {
+    left: 50%;
+}
+
+/* Vertical line. */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    background: #555;
+    margin-left: -3px;
+}
+
+/* Dots on the vertical line. */
+.time-container::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: -13px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: 4px solid #005197;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Speech bubble with content. */
+.time-content {
+    position: relative;
+    padding: .7rem 1rem;
+    background-color: #f0f0f0;
+    border-radius: .5rem;
+}
+
+
+/* Thorn of speech bubble points to the right. */
+.time-container:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #f0f0f0;
+    z-index: 1;
+}
+
+/* Thorn of speech bubble points to the left. */
+.time-container:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f0f0f0 transparent transparent;
+    z-index: 1;
+}
+
+/* Adjust the dots on the right side. */
+.time-container:nth-child(even)::after {
+    left: -12px;
+}
+
+/* Images in the timeline. */
+.time-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout on small screens. */
+@media screen and (max-width: 576px) {
+    /* Move the vertical line to the left. */
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Container with full width. */
+    .time-container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 70px;
+    }
+
+    /* Thorn of speech bubble points to the left. */
+    .time-container:nth-child(odd)::before,
+    .time-container:nth-child(even)::before {
+        left: 60px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #f0f0f0 transparent transparent;
+    }
+
+    /* Adjust the dots. */
+    .time-container:nth-child(odd)::after,
+    .time-container:nth-child(even)::after {
+        left: 18px;
+    }
+
+    /* Adjust the container. */
+    .time-container:nth-child(even) {
+        left: 0%;
+    }
+}
+
+/* Print version. */
+@media print {
+
+    /* Not displayed in print version. */
+    #page-header,
+    #page-footer,
+    .intro,
+    .nav-tabs,
+    .datapreferences,
+    .btn-secondary,
+    i.icon,
+    .comment-area,
+    .pagination,
+    input,
+    .activity-navigation {
+        display: none;
+    }
+
+    /* Container should always stay on the same page. */
+    .time-container {
+        break-inside: avoid;
+    }
+}

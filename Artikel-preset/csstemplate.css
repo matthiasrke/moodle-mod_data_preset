@@ -1,0 +1,93 @@
+/**
+ * Artikel v1.3.4 de
+ *
+ * @package    datapreset_artikel
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Alignment of add entry button. */
+.mdl-align {
+    text-align: left;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .basefieldinput {
+    width: 100%;
+    max-width: 20rem;
+}
+
+#page-mod-data-edit .entry-teaser .basefieldinput {
+    max-width: 40rem;
+}
+
+/* Width of entries. */
+.entry {
+    max-width: 725px;
+}
+
+/* Width of comments and ratings. */
+.comment-link,
+.comment-ctrl,
+.ratingform,
+.rating-aggregate-container {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.comment-link {
+    margin-top: 1rem;
+}
+
+.rating-aggregate-container {
+    display: block;
+}
+
+/* Article. */
+.article-list {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.article-single {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-text {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-single img,
+.article-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Print version. */
+@media print {
+
+    /* Not displayed in print version. */
+    #page-header,
+    #page-footer,
+    .intro,
+    .nav-tabs,
+    .datapreferences,
+    .btn-secondary,
+    i.icon,
+    .comment-area,
+    .pagination,
+    input,
+    .activity-navigation {
+        display: none;
+    }
+
+    .article-list {
+        margin-left: 0;
+    }
+}

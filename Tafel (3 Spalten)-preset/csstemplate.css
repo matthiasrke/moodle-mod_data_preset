@@ -1,0 +1,123 @@
+/**
+ * Tafel (3 Spalten) v1.0.4 de
+ *
+ * @package    datapreset_tafel_3_spalten
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Font. */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* Alignment of add entry button. */
+.box h3 {
+    text-align: center;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .basefieldinput {
+    width: 100%;
+    max-width: 30rem;
+}
+
+/* Blackboard. */
+.blackboard {
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
+    color: #fff;
+    background: #013220;
+    background: radial-gradient(circle, rgba(47, 92, 71, 1) 1%, rgba(1, 50, 32, 1) 100%);
+    min-width: 60rem;
+    min-height: 20rem;
+    border: 10px solid silver;
+    border-bottom: 20px solid silver;
+}
+.blackboard ul {
+    margin-bottom: 0;
+}
+.blackboard a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.blackboard a:hover,
+.blackboard a:focus  {
+    color: #fff;
+}
+.blackboard .icon {
+  color: rgba(255, 255, 255, .3);  
+}
+.blackboard .icon:hover,
+.blackboard .icon:focus {
+  color: rgba(255, 255, 255, .4);  
+}
+
+/* Sides of the blackboard. */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    grid-auto-flow: row dense;
+}
+.links {
+    grid-column: 1 / auto;
+}
+.mittig {
+    grid-column: 2 / auto;
+    padding-left: 2rem;
+}
+.rechts {
+    grid-column: 3 / auto;
+    padding-left: 1.5rem;
+}
+
+/* Line between the sides of the blackboard. */
+.line {
+    position: relative;
+    margin: 0 auto;
+}
+.line::before,
+.line::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    min-height: 15rem;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 33.33%;
+}
+.line::before {
+    left: 66.67%;
+}
+
+/* Print version. */
+@media print {
+    /* Not displayed in print version. */
+    #page-header,
+    #page-footer,
+    .intro,
+    .nav-tabs,
+    .datapreferences,
+    .btn-secondary,
+    i.icon,
+    .comment-area,
+    .pagination,
+    input,
+    .activity-navigation {
+        display: none;
+    }
+    /* Colors in print version. */
+    .blackboard {
+        color: #000;
+        background: #fff;
+        border: 2px solid #000;
+    }
+    .blackboard a {
+        color: #000;
+    }
+    .line::before,
+    .line::after {
+        background: #000;
+    }
+}

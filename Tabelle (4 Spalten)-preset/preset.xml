@@ -1,0 +1,40 @@
+<preset>
+
+<settings>
+<intro></intro>
+<comments>0</comments>
+<requiredentries>0</requiredentries>
+<requiredentriestoview>0</requiredentriestoview>
+<maxentries>0</maxentries>
+<rssarticles>0</rssarticles>
+<approval>0</approval>
+<manageapproved>1</manageapproved>
+<defaultsortdir>0</defaultsortdir>
+<defaultsort>0</defaultsort>
+</settings>
+
+<field>
+<type>text</type>
+<name>Spalte 1</name>
+<required>0</required>
+</field>
+
+<field>
+<type>text</type>
+<name>Spalte 2</name>
+<required>0</required>
+</field>
+
+<field>
+<type>text</type>
+<name>Spalte 3</name>
+<required>0</required>
+</field>
+
+<field>
+<type>text</type>
+<name>Spalte 4</name>
+<required>0</required>
+</field>
+
+</preset>

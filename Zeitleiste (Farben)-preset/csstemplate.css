@@ -1,0 +1,548 @@
+/**
+ * Zeitleiste (Farben) v1.0.7 de
+ *
+ * @package    datapreset_zeitleiste_farben
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Alignment of add entry button. */
+.box h3 {
+    text-align: center;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .basefieldinput,
+#page-mod-data-edit .entry-img {
+    width: 100%;
+    max-width: 30rem;
+}
+
+#page-mod-data-edit .entry-date .basefieldinput {
+    max-width: 15rem;
+}
+
+/* Width and colors of the comments. */
+.comment-area textarea {
+    background: #fff;
+}
+
+.time-content .time {
+    color: rgba(255, 255, 255, .6);
+}
+
+.time-content.Gelb .time {
+    color: rgba(0, 0, 0, .6);
+}
+
+@media screen and (min-width: 576px) {
+
+    .comment-link,
+    .comment-ctrl {
+        max-width: 40%;
+        margin-left: 10%;
+    }
+
+    .time-comment .comment-link,
+    .time-comment .comment-ctrl {
+        max-width: none;
+        margin-left: 0;
+    }
+}
+
+/* Font size. */
+.time-date {
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.time-text {
+    font-size: 110%;
+}
+
+.time-darken {
+    background: rgba(0, 0, 0, .3);
+    padding: .25rem;
+}
+
+.Gelb .time-darken {
+    background: rgba(255, 255, 255, .7);
+}
+
+.time-content a,
+.time-content a:hover,
+.time-content a:focus {
+    color: inherit;
+}
+
+.time-content a:hover,
+.time-content a:focus {
+    text-decoration: underline;
+}
+
+/* Images in the timeline. */
+#page-mod-data-view .time-content .time-img img {
+    object-fit: cover;
+    object-position: center center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-width: 4px;
+}
+
+#page-mod-data-view .time-content .time-img-single img {
+    max-width: 100%;
+    border-radius: .9rem;
+    border-width: 4px;
+}
+
+#page-mod-data-view .time-content .userpicture {
+    border-width: 2px;
+}
+
+/* Image border. */
+#page-mod-data-view .time-content .time-img img,
+#page-mod-data-view .time-content .time-img-single img,
+#page-mod-data-view .time-content .userpicture {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .3) !important;
+}
+
+#page-mod-data-view .time-content.Gelb .time-img img,
+#page-mod-data-view .time-content.Gelb .time-img-single img,
+#page-mod-data-view .time-content.Gelb .userpicture {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .7) !important;
+}
+
+/* Edit icons. */
+.time-content .icon {
+    color: rgba(255, 255, 255, .6);
+}
+
+.time-content .icon:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
+.time-content.Gelb .icon {
+    color: rgba(0, 0, 0, .4);
+}
+
+.time-content.Gelb .icon:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+/* Non-visible container. */
+.time-container {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    background: inherit;
+}
+
+/* Container on the left. */
+.time-container:nth-child(odd) {
+    left: 0;
+}
+
+/* Container on the right. */
+.time-container:nth-child(even) {
+    left: 50%;
+}
+
+/* Vertical line. */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    background: #555;
+    margin-left: -3px;
+}
+
+/* Dots on the vertical line. */
+.time-container::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: -13px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: 4px solid #455a64;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Speech bubble with content. */
+.time-content {
+    position: relative;
+    color: #fff;
+    background: #455a64;
+    border-radius: .9rem;
+}
+
+/* Thorn of speech bubble points to the right. */
+.time-container:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #455a64;
+    z-index: 1;
+}
+
+/* Thorn of speech bubble points to the left. */
+.time-container:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #455a64 transparent transparent;
+    z-index: 1;
+}
+
+/* Adjust the dots on the right side. */
+.time-container:nth-child(even)::after {
+    left: -12px;
+}
+
+/* Colors. */
+.dot.Rot,
+.time-content.Rot {
+    background: #d32f2f;
+}
+
+.time-container.Rot::after {
+    border-color: #d32f2f;
+}
+
+.time-container.Rot:nth-child(odd)::before {
+    border-left-color: #d32f2f;
+}
+
+.time-container.Rot:nth-child(even)::before {
+    border-right-color: #d32f2f;
+}
+
+.dot.Orange,
+.time-content.Orange {
+    background: #f57c00;
+}
+
+.time-container.Orange::after {
+    border-color: #f57c00;
+}
+
+.time-container.Orange:nth-child(odd)::before {
+    border-left-color: #f57c00;
+}
+
+.time-container.Orange:nth-child(even)::before {
+    border-right-color: #f57c00;
+}
+
+.dot.Gelb,
+.time-content.Gelb {
+    color: inherit;
+    background: #fbc02d;
+}
+
+.time-container.Gelb::after {
+    border-color: #fbc02d;
+}
+
+.time-container.Gelb:nth-child(odd)::before {
+    border-left-color: #fbc02d;
+}
+
+.time-container.Gelb:nth-child(even)::before {
+    border-right-color: #fbc02d;
+}
+
+.dot.Grün,
+.time-content.Grün {
+    background: #388e3c;
+}
+
+.time-container.Grün::after {
+    border-color: #388e3c;
+}
+
+.time-container.Grün:nth-child(odd)::before {
+    border-left-color: #388e3c;
+}
+
+.time-container.Grün:nth-child(even)::before {
+    border-right-color: #388e3c;
+}
+
+.dot.Blaugrün,
+.time-content.Blaugrün {
+    background: #0097a7;
+}
+
+.time-container.Blaugrün::after {
+    border-color: #0097a7;
+}
+
+.time-container.Blaugrün:nth-child(odd)::before {
+    border-left-color: #0097a7;
+}
+
+.time-container.Blaugrün:nth-child(even)::before {
+    border-right-color: #0097a7;
+}
+
+.dot.Hellblau,
+.time-content.Hellblau {
+    background: #0288d1;
+}
+
+.time-container.Hellblau::after {
+    border-color: #0288d1;
+}
+
+.time-container.Hellblau:nth-child(odd)::before {
+    border-left-color: #0288d1;
+}
+
+.time-container.Hellblau:nth-child(even)::before {
+    border-right-color: #0288d1;
+}
+
+.dot.Blau,
+.time-content.Blau {
+    background: #1976d2;
+}
+
+.time-container.Blau::after {
+    border-color: #1976d2;
+}
+
+.time-container.Blau:nth-child(odd)::before {
+    border-left-color: #1976d2;
+}
+
+.time-container.Blau:nth-child(even)::before {
+    border-right-color: #1976d2;
+}
+
+.dot.Lila,
+.time-content.Lila {
+    background: #7b1fa2;
+}
+
+.time-container.Lila::after {
+    border-color: #7b1fa2;
+}
+
+.time-container.Lila:nth-child(odd)::before {
+    border-left-color: #7b1fa2;
+}
+
+.time-container.Lila:nth-child(even)::before {
+    border-right-color: #7b1fa2;
+}
+
+.dot.Rosa,
+.time-content.Rosa {
+    background: #c2185b;
+}
+
+.time-container.Rosa::after {
+    border-color: #c2185b;
+}
+
+.time-container.Rosa:nth-child(odd)::before {
+    border-left-color: #c2185b;
+}
+
+.time-container.Rosa:nth-child(even)::before {
+    border-right-color: #c2185b;
+}
+
+.dot.Braun,
+.time-content.Braun {
+    background: #5d4037;
+}
+
+.time-container.Braun::after {
+    border-color: #5d4037;
+}
+
+.time-container.Braun:nth-child(odd)::before {
+    border-left-color: #5d4037;
+}
+
+.time-container.Braun:nth-child(even)::before {
+    border-right-color: #5d4037;
+}
+
+.dot.Grau,
+.time-content.Grau {
+    background: #455a64;
+}
+
+.time-container.Grau::after {
+    border-color: #455a64;
+}
+
+.time-container.Grau:nth-child(odd)::before {
+    border-left-color: #455a64;
+}
+
+.time-container.Grau:nth-child(even)::before {
+    border-right-color: #455a64;
+}
+
+/* Colored dot. */
+.dot {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+/* Layout on large screens. */
+@media screen and (min-width: 992px) {
+
+    /* Big image. */
+    #page-mod-data-view .time-content .time-img img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Layout on small screens. */
+@media screen and (max-width: 576px) {
+
+    /* Move the vertical line to the left. */
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Container with full width. */
+    .time-container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 70px;
+    }
+
+    /* Thorn of speech bubble points to the left. */
+    .time-container:nth-child(odd)::before,
+    .time-container:nth-child(even)::before {
+        top: 22px;
+        left: 60px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #455a64 transparent transparent;
+    }
+
+    .time-container.Rot:nth-child(odd)::before,
+    .time-container.Rot:nth-child(even)::before {
+        border-color: transparent #d32f2f transparent transparent;
+    }
+
+    .time-container.Orange:nth-child(odd)::before,
+    .time-container.Orange:nth-child(even)::before {
+        border-color: transparent #f57c00 transparent transparent;
+    }
+
+    .time-container.Gelb:nth-child(odd)::before,
+    .time-container.Gelb:nth-child(even)::before {
+        border-color: transparent #fbc02d transparent transparent;
+    }
+
+    .time-container.Grün:nth-child(odd)::before,
+    .time-container.Grün:nth-child(even)::before {
+        border-color: transparent #388e3c transparent transparent;
+    }
+
+    .time-container.Blaugrün:nth-child(odd)::before,
+    .time-container.Blaugrün:nth-child(even)::before {
+        border-color: transparent #0097a7 transparent transparent;
+    }
+
+    .time-container.Hellblau:nth-child(odd)::before,
+    .time-container.Hellblau:nth-child(even)::before {
+        border-color: transparent #0288d1 transparent transparent;
+    }
+
+    .time-container.Blau:nth-child(odd)::before,
+    .time-container.Blau:nth-child(even)::before {
+        border-color: transparent #1976d2 transparent transparent;
+    }
+
+    .time-container.Lila:nth-child(odd)::before,
+    .time-container.Lila:nth-child(even)::before {
+        border-color: transparent #7b1fa2 transparent transparent;
+    }
+
+    .time-container.Rosa:nth-child(odd)::before,
+    .time-container.Rosa:nth-child(even)::before {
+        border-color: transparent #c2185b transparent transparent;
+    }
+
+    .time-container.Braun:nth-child(odd)::before,
+    .time-container.Braun:nth-child(even)::before {
+        border-color: transparent #5d4037 transparent transparent;
+    }
+
+    .time-container.Grau:nth-child(odd)::before,
+    .time-container.Grau:nth-child(even)::before {
+        border-color: transparent #455a64 transparent transparent;
+    }
+
+    /* Adjust the dots. */
+    .time-container:nth-child(odd)::after,
+    .time-container:nth-child(even)::after {
+        top: 19px;
+        left: 18px;
+    }
+
+    /* Adjust the container. */
+    .time-container:nth-child(even) {
+        left: 0%;
+    }
+}
+
+/* Print version. */
+@media print {
+
+    /* Not displayed in print version. */
+    #page-header,
+    #page-footer,
+    .intro,
+    .nav-tabs,
+    .datapreferences,
+    .btn-secondary,
+    i.icon,
+    .comment-area,
+    .pagination,
+    input,
+    .activity-navigation {
+        display: none;
+    }
+
+    /* Container should always stay on the same page. */
+    .time-container {
+        break-inside: avoid;
+    }
+}

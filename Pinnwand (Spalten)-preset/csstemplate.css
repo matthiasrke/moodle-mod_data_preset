@@ -46,6 +46,16 @@
     padding-left: 15px;
 }
 
+/* Alignment of add entry button. */
+.mdl-align {
+    text-align: left;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .mod-data-input {
+    margin-left: 0;
+}
+
 /* Width of entries and comments. */
 .entry,
 .comment-link,
@@ -198,16 +208,6 @@
     height: 1.5rem;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 50%;
-}
-
-/* Position of add entry button. */
-.mdl-align {
-    text-align: left;
-}
-
-/* Add entry fields. */
-#page-mod-data-edit .mod-data-input {
-    margin-left: 0;
 }
 
 /* Cards. */

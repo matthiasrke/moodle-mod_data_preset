@@ -1,0 +1,37 @@
+/**
+ * Tabelle (2 Spalten) v1.0.5 de
+ *
+ * @package    datapreset_tabelle_2_spalten
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Alignment of add entry button. */
+.box h3 {
+    text-align: center;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .basefieldinput {
+    width: 100%;
+    max-width: 30rem;
+}
+
+/* Print version. */
+@media print {
+
+    /* Not displayed in print version. */
+    #page-header,
+    #page-footer,
+    .intro,
+    .nav-tabs,
+    .datapreferences,
+    .btn-secondary,
+    i.icon,
+    .comment-area,
+    .pagination,
+    input,
+    .activity-navigation {
+        display: none;
+    }
+}
