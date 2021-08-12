@@ -1,0 +1,48 @@
+/* Charakterisierung | MIT License | @MatthiasRke */
+Vorlage für die Aktivität "Datenbank" in Moodle
+
+v1.0:
+- Charakterisierung erstellt
+
+FAQ
+===
+
+Wie richte ich es ein?
+Aktivität "Datenbank" in Moodle anlegen und dann im Reiter "Vorlagensätze" unter "Import" die ZIP-Datei hochladen.
+
+Kann ich anderen die Vorlage zur Verfügung stellen?
+Im Reiter "Vorlagensätze" gibt es die Option "Als Vorlagensatz sichern". Dadurch können es alle in Moodle nutzen.
+
+Muss in Moodle extra etwas installiert werden?
+Die Vorlage funktioniert in einer normalen Moodle-Version.
+
+Kann ich die App verwenden?
+Ja, die App kann verwendet werden. Die Darstellung weicht aber ab.
+
+Was muss ich beachten, wenn ich die Listenansicht verändern möchte?
+Um die Listenansicht zu bearbeiten, muss der Editor ausschaltet werden, ansonsten funktioniert es nicht.
+
+Wie werden Einträge sortiert?
+Standardmäßig werden die ältesten Einträge zuerst und die jüngsten zuletzt angezeigt (Zeit erstellt).
+
+Kann ich neue Eigenschaften hinzufügen?
+Im Reiter "Felder" können an entsprechener Stelle weitere Eigenschaften zur Auswahl ergänzt werden.
+
+Kann ich die Vorlage weitergeben, welche Lizenz gilt?
+Es gilt die MIT-Lizenz, die das erlaubt:
+
+Copyright (c) 2021 @MatthiasRke
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Sinngemäße Übersetzung
+
+Copyright (c) 2021 @MatthiasRke
+Jedem, der eine Kopie dieser Software und der zugehörigen Dokumentationsdateien (die "Software") erhält, wird hiermit kostenlos die Erlaubnis erteilt, ohne Einschränkung mit der Software zu handeln, einschließlich und ohne Einschränkung der Rechte zur Nutzung, zum Kopieren, Ändern, Zusammenführen, Veröffentlichen, Verteilen, Unterlizenzieren und/oder Verkaufen von Kopien der Software, und Personen, denen die Software zur Verfügung gestellt wird, dies unter den folgenden Bedingungen zu gestatten:
+
+Der obige Urheberrechtshinweis und dieser Genehmigungshinweis müssen in allen Kopien oder wesentlichen Teilen der Software enthalten sein.
+
+DIE SOFTWARE WIRD OHNE MÄNGELGEWÄHR UND OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG, EINSCHLIEßLICH, ABER NICHT BESCHRÄNKT AUF DIE GEWÄHRLEISTUNG DER MARKTGÄNGIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG VON RECHTEN DRITTER, ZUR VERFÜGUNG GESTELLT. DIE AUTOREN ODER URHEBERRECHTSINHABER SIND IN KEINEM FALL HAFTBAR FÜR ANSPRÜCHE, SCHÄDEN ODER ANDERE VERPFLICHTUNGEN, OB IN EINER VERTRAGS- ODER HAFTUNGSKLAGE, EINER UNERLAUBTEN HANDLUNG ODER ANDERWEITIG, DIE SICH AUS, AUS ODER IN VERBINDUNG MIT DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN GESCHÄFTEN MIT DER SOFTWARE ERGEBEN.

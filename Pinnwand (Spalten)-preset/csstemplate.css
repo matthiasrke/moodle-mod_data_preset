@@ -1,39 +1,12 @@
-/* Pinnwand (Spalten) v1.3.7 | MIT License | @MatthiasRke */
+/**
+ * Pinnwand (Spalten) v1.3.8 de
+ *
+ * @package    datapreset_pinnwand_spalten
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
-/* Allgemein */
-/* Zeilenumbruch entfernen */
-#page-mod-data-view #region-main .nav-tabs + br:first-of-type {
-    display: none;
-}
-
-/* Korrekturen */
-.path-mod-data .navbar form,
-.path-mod-data #page-header form {
-    margin-top: 0;
-}
-
-/* Eintrag hinzufügen (hellgrün) */
-.nav-tabs .nav-item a[href*="edit"] {
-    color: #fff;
-    background: #28a745;
-    border-color: #28a745;
-}
-.nav-tabs .nav-item a[href*="edit"]:hover {
-    background: #218838;
-    border-color: #1e7e34;
-}
-.nav-tabs .nav-item a[href*="edit"]:focus {
-    box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5);
-}
-.nav-tabs .nav-item a[href*="edit"]::before {
-    font-family: "FontAwesome";
-    font-weight: 900;
-    content: "\f067";
-    margin-right: .5rem;
-}
-
-/* Datenbank */
-/* Hintergrund */
+/* Background color. */
 .path-mod-data,
 .path-mod-data #page,
 .path-mod-data #region-main,
@@ -42,11 +15,12 @@
 .region_main_settings_menu_proxy {
     background-color: #f8f9fa;
 }
+
 .path-mod-data #region-main {
     border: none;
 }
 
-/* Scrollbar nach unten und verbreitern */
+/* Change position of scrollbar. */
 @media (min-width: 992px) {
     .path-mod-data #region-main {
         overflow-x: visible;
@@ -54,77 +28,93 @@
     }
 }
 
-/* Rand an rechter Seite */
+/* Padding on the right. */
 .outer-container {
     display: inline-flex;
     flex-wrap: wrap;
     min-width: 100%;
     padding-right: 15px;
 }
+
 .path-mod-data #region-main-box {
     padding-right: 0;
     padding-left: 0;
 }
+
 .path-mod-data #region-main-settings-menu {
     padding-right: 15px;
     padding-left: 15px;
 }
 
-/* Breite der Einträge und Kommentare */
+/* Width of entries and comments. */
 .entry,
 .comment-link,
 .comment-ctrl {
     max-width: 725px;
 }
 
-/* Gliederung */
+/* Numbering. */
 .g-Überschrift {
     order: -11;
 }
+
 .g-1 {
     order: -10;
 }
+
 .g-2 {
     order: -9;
 }
+
 .g-3 {
     order: -8;
 }
+
 .g-4 {
     order: -7;
 }
+
 .g-5 {
     order: -6;
 }
+
 .g-6 {
     order: -5;
 }
+
 .g-7 {
     order: -4;
 }
+
 .g-8 {
     order: -3;
 }
+
 .g-9 {
     order: -2;
 }
+
 .g-10 {
     order: -1;
 }
+
 .g-Überschrift .card-header,
 .g-Überschrift .card-text,
 .g-Überschrift .card-footer {
     display: none;
 }
-/* Angabe der Spalte */
+
+/* Column info. */
 .card-info-1,
 .card-info-2 {
     display: none;
 }
+
 .i-Überschrift.card-info-1 {
     display: initial;
     padding-right: .25rem;
 }
+
 .i-1,
 .i-2,
 .i-3,
@@ -138,137 +128,161 @@
     display: initial;
 }
 
-/* Schrift */
+/* Font size. */
 .card-title {
     font-size: 120%;
 }
+
 .g-Überschrift .card-title {
     font-size: 140%;
     font-weight: 400;
 }
+
 .card-title {
-   font-weight: 600;
+    font-weight: 600;
 }
+
 #region-main .card small {
     font-size: 90%;
 }
 
-/* Farben */
+/* Colors. */
 .Rot {
-    background: #ffcdd2;
-}
-.Orange {
-    background: #ffe0b2;
-}
-.Gelb {
-    background: #fff9c4;
-}
-.Grün {
-    background: #c8e6c9;
-}
-.Blaugrün {
-    background: #b2ebf2;
-}
-.Hellblau {
-    background: #b3e5fc;
-}
-.Blau {
-    background: #bbdefb;
-}
-.Lila {
-    background: #d1c4e9;
-}
-.Rosa {
-    background: #f8bbd0;
-}
-.Braun {
-    background: #d7ccc8;
-}
-.Grau {
-    background: #cfd8dc;
+    background-color: #ffcdd2;
 }
 
-/* Farbpunkt */
+.Orange {
+    background-color: #ffe0b2;
+}
+
+.Gelb {
+    background-color: #fff9c4;
+}
+
+.Grün {
+    background-color: #c8e6c9;
+}
+
+.Blaugrün {
+    background-color: #b2ebf2;
+}
+
+.Hellblau {
+    background-color: #b3e5fc;
+}
+
+.Blau {
+    background-color: #bbdefb;
+}
+
+.Lila {
+    background-color: #d1c4e9;
+}
+
+.Rosa {
+    background-color: #f8bbd0;
+}
+
+.Braun {
+    background-color: #d7ccc8;
+}
+
+.Grau {
+    background-color: #cfd8dc;
+}
+
+/* Colored dot. */
 .dot {
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 50%;
 }
 
-/* Buttons bei Eintrag hinzufügen */
+/* Position of add entry button. */
 .mdl-align {
     text-align: left;
 }
 
-/* Felder bei Eintrag hinzufügen */
+/* Add entry fields. */
 #page-mod-data-edit .mod-data-input {
     margin-left: 0;
 }
 
-/* Karten */
-/* Breite und Höhe der Karten */
+/* Cards. */
+/* Width and height of cards. */
 .grid-container .card {
     width: 100%;
-    min-width: 275px;  
+    min-width: 275px;
     max-height: 375px;
     overflow-y: auto;
     overflow-x: hidden;
 }
-/* Kopfzeile */
+
+/* Card header. */
 .card-header {
     padding: .5rem;
 }
-/* Verhindert falsche Darstellung */
+
+/* Fix wrong display of cards. */
 .card-body {
     min-height: auto;
 }
-/* Ausblenden leerer Zeilen */
+
+/* Hide empty lines. */
 .card-title:empty,
 .card-text:empty,
 .card-footer:empty {
-    display:none;
+    display: none;
 }
-/* Icons zum Bearbeiten */
+
+/* Edit icons. */
 .card-icon .icon {
     color: rgba(0, 0, 0, .4);
 }
+
 .card-icon .icon:hover {
     color: rgba(0, 0, 0, .6);
 }
-/* Eingefügte Bilder */
+
+/* Image size. */
 #page-mod-data-view .card img {
     max-width: 100%;
     height: auto;
 }
-/* Eingefügte Videos */
+
+/* Video size. */
 .mediaplugin,
-.mediaplugin video  {
+.mediaplugin video {
     min-width: calc(100% + 40px);
     margin-right: calc(-20px);
     margin-left: calc(-20px);
     margin-bottom: 1rem;
 }
 
-/* Scrollbar der Karten */
+/* Card scrollbar. */
 .grid-container .card {
     scrollbar-width: thin;
 }
+
 .grid-container .card::-webkit-scrollbar {
     width: 7.5px;
 }
+
 .grid-container .card::-webkit-scrollbar-track {
-    background: #f0f0f0;
-}
-.grid-container .card::-webkit-scrollbar-thumb {
-    background: #cdcdcd;
-}
-.grid-container .card::-webkit-scrollbar-thumb:hover {
-    background: #606060;
+    background-color: #f0f0f0;
 }
 
-/* Listenansicht mit Spalten und Breite der Karten */
+.grid-container .card::-webkit-scrollbar-thumb {
+    background-color: #cdcdcd;
+}
+
+.grid-container .card::-webkit-scrollbar-thumb:hover {
+    background-color: #606060;
+}
+
+/* List view with columns and card width. */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
@@ -277,59 +291,72 @@
     grid-auto-flow: row dense;
 }
 
-/* Zuordnung in die Spalten */
+/* Columns. */
 .s-1 {
     grid-column: 1 / auto;
 }
+
 .s-2 {
     grid-column: 2 / auto;
 }
+
 .s-3 {
     grid-column: 3 / auto;
 }
+
 .s-4 {
     grid-column: 4 / auto;
 }
+
 .s-5 {
     grid-column: 5 / auto;
 }
+
 .s-6 {
     grid-column: 6 / auto;
 }
+
 .s-7 {
     grid-column: 7 / auto;
 }
+
 .s-8 {
     grid-column: 8 / auto;
 }
+
 .s-9 {
     grid-column: 9 / auto;
 }
+
 .s-10 {
     grid-column: 10 / auto;
 }
+
 .s-11 {
     grid-column: 11 / auto;
 }
+
 .s-12 {
     grid-column: 12 / auto;
 }
 
-/* Anpassung für kleine Bildschirme */
+/* Layout on smaller screens. */
 @media screen and (max-width: 576px) {
     .path-mod-data #region-main {
         padding-right: 15px;
         padding-left: 15px;
         border: none;
     }
+
     .path-mod-data #page-header .card {
-        background: transparent;
+        background-color: transparent;
     }
 }
 
-/* Druckversion */
+/* Print version. */
 @media print {
-/* Wird beim Drucken nicht angezeigt */
+
+    /* Not displayed in print version. */
     #page-header,
     #page-footer,
     .intro,
@@ -343,24 +370,28 @@
     .activity-navigation {
         display: none;
     }
-/* Weißer Hintergrund in Druckversion */
+
+    /* Change background-color to white in print version. */
     .path-mod-data,
     .path-mod-data #page,
     .path-mod-data #region-main,
     .path-mod-data .activity-navigation,
     .region_main_settings_menu_proxy {
-        background: #fff;
+        background-color: #fff;
     }
-/* Darstellung der Listenansicht beim Drucken */
+
+    /* List view in print version. */
     .outer-container {
         display: block;
     }
+
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
         padding: 0;
         grid-gap: 0;
     }
-/* Darstellung der Karten beim Drucken */
+
+    /* Cards in print version. */
     .grid-container .card {
         min-width: 0;
         max-height: none;

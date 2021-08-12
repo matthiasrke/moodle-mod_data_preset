@@ -1,19 +1,19 @@
 <div class="outer-container">
     <div class="grid-container">
-    <script>
-    // Einmalig pro Sitzung durchführen
-    if ((typeof sessionStorage !== 'undefined') &&
-        (sessionStorage.getItem('ChangeEntriesReload') === null)) {
+        <script>
+            // Run once per session.
+            if ((typeof sessionStorage !== 'undefined') &&
+                (sessionStorage.getItem('ChangeEntriesReload') === null)) {
 
-        // URL für 1000 Einträge pro Seite erzeugen
-        const params = new URLSearchParams(location.search);
-        params.set('perpage', 1000);
-        window.history.replaceState({}, '', `${location.pathname}?${params}`);
-        // Seite neu laden
-        window.location.reload();
+                // Set url for 1000 entries per site.
+                const params = new URLSearchParams(location.search);
+                params.set('perpage', 1000);
+                window.history.replaceState({}, '', `${location.pathname}?${params}`);
+                // Reload page.
+                window.location.reload();
 
-        console.log('ok');
+                console.log('ok');
 
-        sessionStorage.setItem('ChangeEntriesReload', true);
-    }
-    </script>
+                sessionStorage.setItem('ChangeEntriesReload', true);
+            }
+        </script>
