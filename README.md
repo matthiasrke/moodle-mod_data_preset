@@ -23,5 +23,11 @@ http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 - Zeitleiste
 - Zeitleiste (Farben)
 
+## Source control URL
+https://github.com/matthiasrke/moodle-mod_data_preset
+
+## Bug tracker
+https://github.com/matthiasrke/moodle-mod_data_preset/issues
+
 ## Download
 https://www.magentacloud.de/share/2h.-.oupbv
