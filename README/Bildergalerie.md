@@ -1,6 +1,6 @@
 # Bildergalerie (Mosaik) und Bildergalerie (16-9)
 Vorlage für die Aktivität "Datenbank" in Moodle
-mit CSSGram (https://una.im/CSSgram/)
+mit CSSGram (https://una.im/CSSgram)
 
 ## Copyright
 2021 Matthias Reike
