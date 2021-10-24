@@ -5,7 +5,7 @@
             if ((typeof sessionStorage !== 'undefined') &&
                 (sessionStorage.getItem('ChangeEntriesReload') === null)) {
 
-                // Set url for 1000 entries per site.
+                // Set url for 1000 entries per page.
                 const params = new URLSearchParams(location.search);
                 params.set('perpage', 1000);
                 window.history.replaceState({}, '', `${location.pathname}?${params}`);
