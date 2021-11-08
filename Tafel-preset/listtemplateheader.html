@@ -1,1 +1,26 @@
-<ul class="blackboard py-4 px-5 mb-0">
+<div class="text-right ion-hide">
+    <label for="checkbox1" onClick="save()"><input type="checkbox" id="checkbox1"> Automatisch
+        aktualisieren</input></label>
+</div>
+
+<script>
+    // Save status of checkbox.
+    function save() {
+        var checkbox = document.getElementById("checkbox1");
+        localStorage.setItem("checkbox1", checkbox.checked);
+        location.reload();
+    }
+    // Get status of checkbox.
+    var checked = JSON.parse(localStorage.getItem("checkbox1"));
+    document.getElementById("checkbox1").checked = checked;
+
+    // Reload if checkbox is checked.
+    if (checkbox1.checked == true) {
+        // Reload single div every 2 sec.
+        setInterval(function () {
+            $("#data-content").load(location.href + " #data-content>*", "");
+        }, 2000);
+    }
+</script>
+
+<ul class="blackboard py-4 px-5 mb-0" id="data-content">
