@@ -1,5 +1,5 @@
 /**
- * Pinnwand (Zeitleiste) v1.0.1 de
+ * Pinnwand (Zeitleiste) v1.0.2 de
  *
  * @package    datapreset_pinnwand_zeitleiste
  * @copyright  2021 Matthias Reike
@@ -609,7 +609,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 

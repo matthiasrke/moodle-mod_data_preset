@@ -26,9 +26,14 @@
 @media screen and (min-width: 576px) {
 
     .comment-link,
-    .comment-ctrl {
+   .comment-ctrl {
         max-width: 40%;
         margin-left: 10%;
+    }
+   .time-content .comment-link,
+   .time-content .comment-ctrl {
+        max-width: none;
+        margin-left: 0;
     }
 }
 
@@ -179,7 +184,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 

@@ -1,5 +1,5 @@
 /**
- * Artikel v1.3.4 de
+ * Artikel v1.3.5 de
  *
  * @package    datapreset_artikel
  * @copyright  2021 Matthias Reike
@@ -83,11 +83,17 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 
     .article-list {
         margin-left: 0;
+    }
+
+    .badge {
+        color: #000;
+        background-color: #fff;
     }
 }

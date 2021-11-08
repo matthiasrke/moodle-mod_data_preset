@@ -1,5 +1,5 @@
 /**
- * Bildergalerie (16-9) v1.0.7 de
+ * Bildergalerie (16-9) v1.0.8 de
  *
  * @package    datapreset_bildergalerie-16-9
  * @copyright  2021 Matthias Reike
@@ -163,7 +163,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 }

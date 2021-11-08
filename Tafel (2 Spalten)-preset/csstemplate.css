@@ -105,7 +105,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 

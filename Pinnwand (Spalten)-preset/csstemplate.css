@@ -1,5 +1,5 @@
 /**
- * Pinnwand (Spalten) v1.3.8 de
+ * Pinnwand (Spalten) v1.3.9 de
  *
  * @package    datapreset_pinnwand_spalten
  * @copyright  2021 Matthias Reike
@@ -367,7 +367,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 

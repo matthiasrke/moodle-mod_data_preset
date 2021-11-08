@@ -1,5 +1,5 @@
 /**
- * Zeitleiste (Farben) v1.1.2 de
+ * Zeitleiste (Farben) v1.2 de
  *
  * @package    datapreset_zeitleiste_farben
  * @copyright  2021 Matthias Reike
@@ -43,8 +43,8 @@
         margin-left: 10%;
     }
 
-    .time-comment .comment-link,
-    .time-comment .comment-ctrl {
+    .time-content .comment-link,
+    .time-content .comment-ctrl {
         max-width: none;
         margin-left: 0;
     }
@@ -537,7 +537,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 

@@ -1,5 +1,5 @@
 /**
- * Tabelle (2 Spalten) v1.0.5 de
+ * Tabelle (2 Spalten) v1.0.6 de
  *
  * @package    datapreset_tabelle_2_spalten
  * @copyright  2021 Matthias Reike
@@ -31,7 +31,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 }

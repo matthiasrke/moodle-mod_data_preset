@@ -1,5 +1,5 @@
 /**
- * Tabelle (4 Spalten) v1.0.5 de
+ * Tabelle (4 Spalten) v1.0.6 de
  *
  * @package    datapreset_tabelle_4_spalten
  * @copyright  2021 Matthias Reike
@@ -31,7 +31,8 @@
     .comment-area,
     .pagination,
     input,
-    .activity-navigation {
+    .activity-navigation,
+    .activity-information {
         display: none;
     }
 }
