@@ -26,6 +26,10 @@
     min-width: 125px;
 }
 
+#page-mod-data-edit .entry .table td {
+    vertical-align: middle;
+}
+
 /* Width of entries and comments. */
 .entry,
 .comment-link,
