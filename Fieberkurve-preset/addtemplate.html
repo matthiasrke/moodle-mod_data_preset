@@ -1,0 +1,157 @@
+<div class="entry">
+
+    <label for="[[name#id]]"><i class="icon fa fa-line-chart fa-fw" aria-hidden="true"></i>Name</label>[[name]]<br>
+    <label for="[[color#id]]"><i class="icon fa fa-paint-brush fa-fw" aria-hidden="true"></i>Farbe</label>
+    <div class="d-flex"><input type="color" id="color" name="color">
+        <div class="ml-2">[[color]]</div>
+    </div>
+    <br>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <tbody>
+                <tr>
+                    <th class="t1">
+                        <i class="icon fa fa-calendar-o fa-fw" aria-hidden="true"></i>Jahr
+                    </th>
+                    <th class="t2">
+                        <i class="icon fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>Ereignis
+                    </th>
+                    <th>
+                        <i class="icon fa fa-sort-amount-desc fa-fw" aria-hidden="true"></i>Konfrontation / Entspannung
+                    </th>
+                </tr>
+                <tr>
+                    <td class="t1">
+                        [[x1]]
+                    </td>
+                    <td class="t2">
+                        [[d1]]
+                    </td>
+                    <td>
+                        [[y1]]
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t1">
+                        [[x2]]
+                    </td>
+                    <td class="t2">
+                        [[d2]]
+                    </td>
+                    <td>
+                        [[y2]]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1">
+                        [[x3]]
+                    </td>
+                    <td class="t2">
+                        [[d3]]
+                    </td>
+                    <td>
+                        [[y3]]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1">
+                        [[x4]]
+                    </td>
+                    <td class="t2">
+                        [[d4]]
+                    </td>
+                    <td>
+                        [[y4]]
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t1">
+                        [[x5]]
+                    </td>
+                    <td class="t2">
+                        [[d5]]
+                    </td>
+                    <td>
+                        [[y5]]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1">
+                        [[x6]]
+                    </td>
+                    <td class="t2">
+                        [[d6]]
+                    </td>
+                    <td>
+                        [[y6]]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1">
+                        [[x7]]
+                    </td>
+                    <td class="t2">
+                        [[d7]]
+                    </td>
+                    <td>
+                        [[y7]]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1">
+                        [[x8]]
+                    </td>
+                    <td class="t2">
+                        [[d8]]
+                    </td>
+                    <td>
+                        [[y8]]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1">
+                        [[x9]]
+                    </td>
+                    <td class="t2">
+                        [[d9]]
+                    </td>
+                    <td>
+                        [[y9]]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1">
+                        [[x10]]
+                    </td>
+                    <td class="t2">
+                        [[d10]]
+                    </td>
+                    <td>
+                        [[y10]]
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<br>
+
+<script>
+    var theInput = document.getElementById('color');
+    var theColor = theInput.value;
+    theInput.addEventListener('input', function () {
+
+        document.getElementById('[[color#id]]').value = theInput.value;
+    }, false);
+
+    document.getElementById('[[color#id]]').readOnly = true;
+</script>

@@ -1,0 +1,60 @@
+/**
+ * Spannungskurve  v0.5 de
+ *
+ * @package    datapreset_spannungskurve
+ * @copyright  2021 Matthias Reike
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Alignment of add entry button. */
+.mdl-align {
+    text-align: left;
+}
+
+/* Add entry fields. */
+#page-mod-data-edit .entry .table .basefieldinput,
+#page-mod-data-edit .entry .d-flex .basefieldinput {
+    width: 100%;
+}
+
+#page-mod-data-edit .entry .table .t1 .basefieldinput {
+    min-width: 75px;
+    max-width: 150px;
+}
+
+#page-mod-data-edit .entry .table .t2 .basefieldinput {
+    min-width: 125px;
+}
+
+/* Width of entries and comments. */
+.entry,
+.comment-link,
+.comment-ctrl {
+    max-width: 800px;
+}
+
+/* Print version. */
+@media print {
+
+    /* Not displayed in print version. */
+    #page-header,
+    #page-footer,
+    .intro,
+    .nav-tabs,
+    .datapreferences,
+    .btn-secondary,
+    i.icon,
+    .comment-area,
+    .pagination,
+    input,
+    .activity-navigation,
+    .activity-information {
+        display: none;
+    }
+
+    /* Chart in print version. */
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+}

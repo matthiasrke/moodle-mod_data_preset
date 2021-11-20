@@ -1,0 +1,75 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+<canvas id="myChart"></canvas>
+
+<script>
+    const ctx = document.getElementById('myChart');
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [
+                '[[x1]]',
+                '[[x2]]',
+                '[[x3]]',
+                '[[x4]]',
+                '[[x5]]',
+                '[[x6]]',
+                '[[x7]]',
+                '[[x8]]',
+                '[[x9]]',
+                '[[x10]]',
+            ],
+            datasets: [{
+                label: '[[name]]',
+                data: [
+                    [[y1]],
+                    [[y2]],
+                    [[y3]],
+                    [[y4]],
+                    [[y5]],
+                    [[y6]],
+                    [[y7]],
+                    [[y8]],
+                    [[y9]],
+                    [[y10]],
+                ],
+                backgroundColor: [
+                    '[[color]]',
+                ],
+                borderColor: [
+                    '[[color]]',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    type: 'time',
+                    time: {
+                        tooltipFormat: 'YYYY',
+                        displayFormats: {
+                            unit: 'year'
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+<br>
+<div>[[x1]] [[d1]]</div>
+<div>[[x2]] [[d2]]</div>
+<div>[[x3]] [[d3]]</div>
+<div>[[x4]] [[d4]]</div>
+<div>[[x5]] [[d5]]</div>
+<div>[[x6]] [[d6]]</div>
+<div>[[x7]] [[d7]]</div>
+<div>[[x7]] [[d7]]</div>
+<div>[[x8]] [[d8]]</div>
+<div>[[x9]] [[d9]]</div>
+<div>[[x10]] [[d10]]</div>
+<br>
+<p><small>##user## - ##timemodified##</small></p>
+<div>##edit## ##delete## ##approve## ##disapprove## ##export##</div>

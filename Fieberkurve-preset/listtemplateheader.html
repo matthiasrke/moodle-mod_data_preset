@@ -1,0 +1,13 @@
+<div class="d-none">Die Fieberkurve funktioniert nicht in der mobilen App. Wechsele in den Browser.</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+<canvas id="myChart"></canvas>
+
+<script>
+    const ctx = document.getElementById('myChart');
+    const myChart = new Chart(ctx, {
+                type: 'scatter',
+                data: {
+                    datasets: [
