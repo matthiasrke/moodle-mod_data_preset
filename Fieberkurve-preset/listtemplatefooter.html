@@ -1,19 +1,24 @@
 ]
 },
-
-options: {
-scales: {
+options : {
+scales : {
+y : {
+// min: -10,
+// max: 10,
+},
 x: {
-min: 1945,
+// min: 1945,
 // max: 2021,
-},
-y: {
-min: -10,
-max: 10,
+type: 'time',
+time: {
+tooltipFormat: 'YYYY',
+displayFormats: {
+unit: 'year'
+}
+}
 },
 }
 }
-
 });
 </script>
 <br>
