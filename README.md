@@ -27,7 +27,7 @@ http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 [README](/README/)
 
 ## Download
-Use the [download folder](/Download) to download the ZIP files.
+Use the [download folder](/Download/) to download the ZIP files.
 
 ## Installation
 Create an activity "Database" in Moodle and then upload the ZIP file in the tab "Presets" under "Import".
@@ -45,6 +45,8 @@ Pinnwand (Spalten) / Board
 Zeitleiste / Timeline
 
 ![Zeitleiste](/Screenshots/Zeitleiste-v1.0.jpg)
+
+See [Screenshots](/Screenshots/) for more images.
 
 ## Source control URL
 https://github.com/matthiasrke/moodle-mod_data_preset
