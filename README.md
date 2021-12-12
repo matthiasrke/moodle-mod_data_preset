@@ -27,7 +27,7 @@ http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 [README](/README/)
 
 ## Download
-Use the [download folder](/Download) to download the zip files.
+Use the [download folder](/Download) to download the ZIP files.
 
 ## Installation
 Create an activity "Database" in Moodle and then upload the ZIP file in the tab "Presets" under "Import".
