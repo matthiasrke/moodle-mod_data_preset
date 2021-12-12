@@ -53,6 +53,3 @@ https://github.com/matthiasrke/moodle-mod_data_preset
 
 ## Bug tracker
 https://github.com/matthiasrke/moodle-mod_data_preset/issues
-
-## Download
-https://www.magentacloud.de/share/2h.-.oupbv
