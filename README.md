@@ -26,6 +26,9 @@ http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 ## Readmes for Presets (German)
 [README](/README/)
 
+## Download
+Use the [download folder](/Download) to download the zip files.
+
 ## Installation
 Create an activity "Database" in Moodle and then upload the ZIP file in the tab "Presets" under "Import".
 
