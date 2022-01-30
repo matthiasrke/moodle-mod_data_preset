@@ -1,5 +1,5 @@
 /**
- * Tafel (3 Spalten) v1.0.6 de
+ * Tafel (3 Spalten) v1.0.7 de
  *
  * @package    datapreset_tafel_3_spalten
  * @copyright  2021 Matthias Reike
@@ -7,7 +7,7 @@
  */
 
 /* Font. */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
 
 /* Alignment of add entry button. */
 .box h3 {

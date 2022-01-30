@@ -1,13 +1,13 @@
 /**
- * Tafel (2 Spalten) v1.0.6 de
+ * Tafel (2 Spalten) v1.0.7 de
  *
  * @package    datapreset_tafel_2_Spalten
  * @copyright  2021 Matthias Reike
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* Font. */
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
 
 /* Alignment of add entry button. */
 .box h3 {
