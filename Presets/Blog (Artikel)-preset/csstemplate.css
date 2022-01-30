@@ -1,5 +1,5 @@
 /**
- * Artikel v1.3.5 de
+ * Artikel v1.3.6 de
  *
  * @package    datapreset_artikel
  * @copyright  2021 Matthias Reike
@@ -67,6 +67,12 @@
 .article-img img {
     max-width: 100%;
     height: auto;
+}
+
+.article-list .article-img img {
+    object-fit: cover;
+    object-position: top center;
+    aspect-ratio: 16/9;
 }
 
 /* Print version. */

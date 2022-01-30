@@ -1,4 +1,4 @@
-# Artikel
+# Blog (Artikel)
 Vorlage für die Aktivität "Datenbank" in Moodle
 
 ## Copyright
@@ -18,6 +18,9 @@ http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 
 ### v1.3.4:
 - Vereinheitlichungen beim Code
+
+### v1.3.6:
+- Umbenennung in Blog
 
 ## FAQ
 

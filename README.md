@@ -8,9 +8,9 @@ Presets for the moodle database activity
 http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 
 ## Presets
-- [Artikel](/Presets/Artikel-preset)
 - [Bildergalerie (Mosaik)](/Presets/Bildergalerie%20(Mosaik)-preset) 
 - [Bildergalerie (16-9)](/Presets/Bildergalerie%20(16-9)-preset)
+- [Blog (Artikel)](/Presets/Blog%20(Artikel)-preset)
 - [Charakterisierung](/Presets/Charakterisierung-preset)
 - [Pinnwand](/Presets/Pinnwand-preset)
 - [Pinnwand (Spalten)](/Presets/Pinnwand%20(Spalten)-preset)
