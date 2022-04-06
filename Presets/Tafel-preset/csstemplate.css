@@ -1,5 +1,5 @@
 /**
- * Tafel v1.0.7 de
+ * Tafel v1.08 de
  *
  * @package    datapreset_tafel
  * @copyright  2021 Matthias Reike
@@ -8,6 +8,23 @@
 
 /* Font. */
 /* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
+
+/* Options. */
+#options {
+    display: none;
+}
+
+#options.show {
+    display: block;
+}
+
+/* Full view. */
+@media all and (display-mode: fullscreen) {
+
+    .blackboard .icon {
+        display: none;
+    }
+}
 
 /* Alignment of add entry button. */
 .box h3 {
@@ -24,12 +41,14 @@
 .blackboard {
     font-family: 'Caveat', cursive;
     font-size: 1.8rem;
+    letter-spacing: .01rem;
     color: #fff;
     background: #013220;
     background: radial-gradient(circle, rgba(47, 92, 71, 1) 1%, rgba(1, 50, 32, 1) 100%);
-    min-height: 20rem;
+    min-height: 30rem;
     border: 10px solid silver;
-    border-bottom: 20px solid silver;
+    /* border-bottom: 20px solid silver; */
+    border-radius: 1rem;
 }
 
 .blackboard a {
