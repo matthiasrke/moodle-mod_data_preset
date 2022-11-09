@@ -1,6 +1,17 @@
-<div class="text-right d-print-none ion-hide">
-    <label for="checkbox1" onClick="save()"><input type="checkbox" id="checkbox1"> Automatisch
-        aktualisieren</input></label>
+<div class="d-flex justify-content-end d-print-none ion-hide">
+
+    <div class="custom-control custom-switch m-2">
+        <input type="checkbox" id="checkbox1" class="custom-control-input" onClick="save()">
+        <label for="checkbox1" class="custom-control-label" title="Automatisch aktualisieren"><i class="fa fa-refresh"
+                aria-hidden="true"></i></label>
+    </div>
+
+    <div class="icon-no-margin mt-1">
+        <button class="btn btn-light btn-sm" type="button" data-toggle="collapse" data-target="#options"
+            aria-expanded="false" aria-controls="collapseOptions" title="Optionen"><i class="fa fa-sliders"
+                aria-hidden="true"></i></button>
+    </div>
+
 </div>
 
 <script>
@@ -21,8 +32,24 @@
             $("#data-content").load(location.href + " #data-content>*", "");
         }, 2000);
     }
+
+    // Run once per session.
+    if ((typeof sessionStorage !== 'undefined') &&
+        (sessionStorage.getItem('ChangeEntriesReload') === null)) {
+
+        // Set url for 1000 entries per page.
+        const params = new URLSearchParams(location.search);
+        params.set('perpage', 1000);
+        window.history.replaceState({}, '', `${location.pathname}?${params}`);
+        // Reload page.
+        window.location.reload();
+
+        console.log('ok');
+
+        sessionStorage.setItem('ChangeEntriesReload', true);
+    }
 </script>
 
-<ul class="blackboard py-4 px-5 mb-0" id="data-content">
+<div class="blackboard py-4 px-5 mb-0">
     <div class="line">
-        <div class="grid-container">
+        <div class="grid-container" id="data-content">

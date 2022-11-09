@@ -1,5 +1,5 @@
 /**
- * Tafel (3 Spalten) v1.0.7 de
+ * Tafel (3 Spalten) v1.0.9 de
  *
  * @package    datapreset_tafel_3_spalten
  * @copyright  2021 Matthias Reike
@@ -9,8 +9,11 @@
 /* Font. */
 /* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
 
+/* Mod layout start. */
+
 /* Alignment of add entry button. */
-.box h3 {
+.box h3,
+.box h2 {
     text-align: center;
 }
 
@@ -18,6 +21,46 @@
 #page-mod-data-edit .basefieldinput {
     width: 100%;
     max-width: 30rem;
+}
+
+@media (max-width: 576px) {
+
+    #page-mod-data-edit .basefieldinput {
+        max-width: 20rem;
+    }
+
+    .mdl-align .btn {
+        margin: .25rem;
+    }
+}
+
+/* Options. */
+#options {
+    display: none;
+}
+
+#options.show {
+    display: block;
+}
+
+@media (max-width: 576px) {
+
+    #options input,
+    #options select {
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+    }
+
+}
+
+/* Mod layout end. */
+
+/* Full view. */
+@media all and (display-mode: fullscreen) {
+
+    .blackboard .icon {
+        display: none;
+    }
 }
 
 /* Blackboard. */
@@ -32,24 +75,29 @@
     border: 10px solid silver;
     border-bottom: 20px solid silver;
 }
+
 .blackboard ul {
     margin-bottom: 0;
 }
+
 .blackboard a {
     color: #fff;
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+
 .blackboard a:hover,
-.blackboard a:focus  {
+.blackboard a:focus {
     color: #fff;
 }
+
 .blackboard .icon {
-  color: rgba(255, 255, 255, .3);  
+    color: rgba(255, 255, 255, .3);
 }
+
 .blackboard .icon:hover,
 .blackboard .icon:focus {
-  color: rgba(255, 255, 255, .4);  
+    color: rgba(255, 255, 255, .4);
 }
 
 /* Sides of the blackboard. */
@@ -59,13 +107,16 @@
     column-gap: 3rem;
     grid-auto-flow: row dense;
 }
+
 .links {
     grid-column: 1 / auto;
 }
+
 .mittig {
     grid-column: 2 / auto;
     padding-left: 2rem;
 }
+
 .rechts {
     grid-column: 3 / auto;
     padding-left: 1.5rem;
@@ -76,6 +127,7 @@
     position: relative;
     margin: 0 auto;
 }
+
 .line::before,
 .line::after {
     content: '';
@@ -87,12 +139,14 @@
     bottom: 0;
     left: 33.33%;
 }
+
 .line::before {
     left: 66.67%;
 }
 
 /* Print version. */
 @media print {
+
     /* Not displayed in print version. */
     #page-header,
     #page-footer,
@@ -108,15 +162,18 @@
     .activity-information {
         display: none;
     }
+
     /* Colors in print version. */
     .blackboard {
         color: #000;
         background: #fff;
         border: 2px solid #000;
     }
+
     .blackboard a {
         color: #000;
     }
+
     .line::before,
     .line::after {
         background: #000;
