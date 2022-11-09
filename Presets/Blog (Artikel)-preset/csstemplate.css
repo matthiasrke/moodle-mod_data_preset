@@ -1,10 +1,12 @@
 /**
- * Artikel v1.3.6 de
+ * Artikel v1.3.7 de
  *
  * @package    datapreset_artikel
  * @copyright  2021 Matthias Reike
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+/* Mod layout start. */
 
 /* Alignment of add entry button. */
 .mdl-align {
@@ -17,8 +19,11 @@
     max-width: 20rem;
 }
 
-#page-mod-data-edit .entry-teaser .basefieldinput {
-    max-width: 40rem;
+@media (min-width: 576px) {
+
+    #page-mod-data-edit .entry-teaser .basefieldinput {
+        max-width: 40rem;
+    }
 }
 
 /* Width of entries. */
@@ -45,6 +50,8 @@
     display: block;
 }
 
+/* Mod layout end. */
+
 /* Article. */
 .article-list {
     width: 100%;
@@ -61,6 +68,8 @@
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
 }
 
 .article-single img,
