@@ -1,5 +1,5 @@
 /**
- * Tafel (3 Spalten) v1.0.9 de
+ * Tafel (3 Spalten) v1.1 de
  *
  * @package    datapreset_tafel_3_spalten
  * @copyright  2021 Matthias Reike
@@ -61,6 +61,14 @@
     .blackboard .icon {
         display: none;
     }
+
+    #page.drawers.hasstickyfooter {
+        height: auto;
+    }
+
+    .stickyfooter {
+        display: none !important;
+    }
 }
 
 /* Blackboard. */
@@ -75,29 +83,24 @@
     border: 10px solid silver;
     border-bottom: 20px solid silver;
 }
-
 .blackboard ul {
     margin-bottom: 0;
 }
-
 .blackboard a {
     color: #fff;
     text-decoration: underline;
     text-decoration-style: dotted;
 }
-
 .blackboard a:hover,
-.blackboard a:focus {
+.blackboard a:focus  {
     color: #fff;
 }
-
 .blackboard .icon {
-    color: rgba(255, 255, 255, .3);
+  color: rgba(255, 255, 255, .3);  
 }
-
 .blackboard .icon:hover,
 .blackboard .icon:focus {
-    color: rgba(255, 255, 255, .4);
+  color: rgba(255, 255, 255, .4);  
 }
 
 /* Sides of the blackboard. */
@@ -107,16 +110,13 @@
     column-gap: 3rem;
     grid-auto-flow: row dense;
 }
-
 .links {
     grid-column: 1 / auto;
 }
-
 .mittig {
     grid-column: 2 / auto;
     padding-left: 2rem;
 }
-
 .rechts {
     grid-column: 3 / auto;
     padding-left: 1.5rem;
@@ -127,7 +127,6 @@
     position: relative;
     margin: 0 auto;
 }
-
 .line::before,
 .line::after {
     content: '';
@@ -139,7 +138,6 @@
     bottom: 0;
     left: 33.33%;
 }
-
 .line::before {
     left: 66.67%;
 }
@@ -148,19 +146,42 @@
 @media print {
 
     /* Not displayed in print version. */
-    #page-header,
+    /* #page-header, */
     #page-footer,
     .intro,
     .nav-tabs,
-    .datapreferences,
+    /* .datapreferences, */
     .btn-secondary,
     i.icon,
     .comment-area,
     .pagination,
     input,
     .activity-navigation,
-    .activity-information {
+    .activity-information,
+    .page-header-image,
+    hr {
         display: none;
+    }
+
+    /* Footer in print version. */
+    .stickyfooter {
+        display: none !important;
+    }
+
+    #page.drawers.hasstickyfooter {
+        height: auto;
+    }
+
+    /* Header in print version. */
+    #page-header {
+        display: block !important;
+    }
+
+    /* Description in print version. */
+    .path-mod .activity-header:not(:empty) {
+        background-color: #fff;
+        border-bottom: 2px solid #000;
+        border-radius: 0;
     }
 
     /* Colors in print version. */
@@ -174,7 +195,6 @@
         color: #000;
     }
 
-    .line::before,
     .line::after {
         background: #000;
     }

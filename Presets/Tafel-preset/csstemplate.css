@@ -1,5 +1,5 @@
 /**
- * Tafel v1.09 de
+ * Tafel v1.1 de
  *
  * @package    datapreset_tafel
  * @copyright  2021 Matthias Reike
@@ -61,6 +61,14 @@
     .blackboard .icon {
         display: none;
     }
+
+    #page.drawers.hasstickyfooter {
+        height: auto;
+    }
+
+    .stickyfooter {
+        display: none !important;
+    }
 }
 
 /* Blackboard. */
@@ -105,19 +113,42 @@ ul.blackboard {
 @media print {
 
     /* Not displayed in print version. */
-    #page-header,
+    /* #page-header, */
     #page-footer,
     .intro,
     .nav-tabs,
-    .datapreferences,
+    /* .datapreferences, */
     .btn-secondary,
     i.icon,
     .comment-area,
     .pagination,
     input,
     .activity-navigation,
-    .activity-information {
+    .activity-information,
+    .page-header-image,
+    hr {
         display: none;
+    }
+
+    /* Footer in print version. */
+    .stickyfooter {
+        display: none !important;
+    }
+
+    #page.drawers.hasstickyfooter {
+        height: auto;
+    }
+
+    /* Header in print version. */
+    #page-header {
+        display: block !important;
+    }
+
+    /* Description in print version. */
+    .path-mod .activity-header:not(:empty) {
+        background-color: #fff;
+        border-bottom: 2px solid #000;
+        border-radius: 0;
     }
 
     /* Colors in print version. */
@@ -129,5 +160,9 @@ ul.blackboard {
 
     .blackboard a {
         color: #000;
+    }
+
+    .line::after {
+        background: #000;
     }
 }
